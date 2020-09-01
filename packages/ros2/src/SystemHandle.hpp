@@ -103,7 +103,7 @@ public:
 private:
 
   std::shared_ptr<rclcpp::Node> _node;
-  std::unique_ptr<rclcpp::executor::Executor> _executor;
+  std::unique_ptr<rclcpp::Executor> _executor;
   std::vector<std::shared_ptr<void>> _subscriptions;
   std::vector<std::shared_ptr<ServiceClient>> _client_proxies;
 };
